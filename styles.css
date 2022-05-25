@@ -1,10 +1,9 @@
 .main {
   background: url("./images/food1.jpg");
-  background-color: navajowhite;
   background-position-y: top;
-  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100%;
   color: #fff;
   padding: 0 6vw;
   margin: -10px;
@@ -25,7 +24,7 @@
   text-decoration: none;
   font-size: large;
   font-family: CountryBlueprint;
-  margin-right:100px ;
+  margin-right:80px ;
 }
 
 
@@ -120,6 +119,9 @@ input {
     .container {
         margin-left: 40%;
         flex-direction: column;
+    }
+    .main{
+        background-size: 150%;
     }
 }
 
