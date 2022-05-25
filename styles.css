@@ -113,3 +113,13 @@ input {
     font-family: CountryBlueprint;
     font-size: xxx-large;
 }
+
+@media (max-width: 1000px) {
+    .container {
+        margin-left: 40%;
+        flex-direction: column;
+    }
+}
+
+
+
