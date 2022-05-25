@@ -1,12 +1,13 @@
 .main {
-  /*background: url("./images/food1.jpg");*/
-  background-color: black;
+  background: url("./images/food1.jpg");
+  background-color: navajowhite;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   color: #fff;
   padding: 0 6vw;
   margin: -10px;
+  height: 350px;
 
 }
 
@@ -20,10 +21,31 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: large;
+  font-family: CountryBlueprint;
   margin-right:100px ;
 }
 
+
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: white;
+  font-size: large;
+  text-decoration: none;
+}
+
+
+.form1{
+  border-radius: 10px;
+  padding: 15px;
+  background: white;
+  margin-left:28% ;
+  width: 50%;
+
+}
 
 .zomato{
   text-align: center;
@@ -40,5 +62,42 @@
 
 
 
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
 
+.box1{
+    height: 225px;
+    width: 225px;
+    margin-top: 100px;
+    background: url("images/br.jpg");
+    border-radius: 15px;
+
+}
+
+
+
+.breakfast{
+    text-align: center;
+    font-family: CountryBlueprint;
+    margin-top: -40px;
+    font-size:x-large ;
+}
+
+
+
+.box2{
+    height: 225px;
+    width: 225px;
+    margin-top: 100px;
+    background: url("images/lunch.jpg");
+    background-size: cover;
+    border-radius: 15px;
+    align-content: center;
+
+}
 
