@@ -8,8 +8,6 @@
   padding: 0 6vw;
   margin: -10px;
   height: 350px;
-
-
 }
 
 .topnav {
@@ -45,7 +43,6 @@ input {
   background: white;
   margin-left:28% ;
   width: 50%;
-
 }
 
 .zomato{
@@ -53,7 +50,6 @@ input {
   margin-top: 100px;
   font-size: xxx-large;
   font-family: CountryBlueprint;
-
 }
 
 
@@ -77,10 +73,7 @@ input {
     margin-top: 100px;
     background: url("images/br.jpg");
     border-radius: 15px;
-
 }
-
-
 
 .breakfast{
     text-align: center;
@@ -88,8 +81,6 @@ input {
     margin-top: -40px;
     font-size:x-large ;
 }
-
-
 
 .box{
     height: 225px;
@@ -103,7 +94,6 @@ input {
     background: center;
 }
 
-
 .breakfast:hover {
  cursor: pointer;
 }
@@ -116,13 +106,13 @@ input {
 }
 
 @media (max-width: 1000px) {
-    .container {
-        margin-left: 40%;
-        flex-direction: column;
-    }
-    .main{
-        background-size: 150%;
-    }
+.container {
+  margin-left: 40%;
+  flex-direction: column;
+}
+.main{
+  background-size: 150%;
+}
 }
 
 
