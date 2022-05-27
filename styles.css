@@ -27,17 +27,14 @@
 
 
 input {
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: groove;
+ 
   background-color: white;
   font-size: large;
   text-decoration: none;
 }
 
 
-.form1{
+.form1 {
   border-radius: 10px;
   padding: 15px;
   background: white;
@@ -45,7 +42,7 @@ input {
   width: 50%;
 }
 
-.zomato{
+.zomato {
   text-align: center;
   margin-top: 100px;
   font-size: xxx-large;
@@ -59,7 +56,7 @@ input {
 
 
 
-.container{
+.container {
     width: 100%;
     height: auto;
     display: flex;
@@ -99,10 +96,34 @@ input {
 }
 
 .fav{
-    text-align: center;
-    margin-top: 100px;
-    font-family: CountryBlueprint;
-    font-size: xxx-large;
+  text-align: center;
+  margin-top: 100px;
+  font-family: CountryBlueprint;
+  font-size: xxx-large;
+}
+
+#form1 {
+  width:45%;
+  border:1px solid black;
+  margin:25px 0 0 0;
+  display:Flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  gap:15px;
+}
+
+
+.signup_container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search_bar{
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 1000px) {
