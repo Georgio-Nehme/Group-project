@@ -398,9 +398,62 @@ list-style-type: none;
 
 #username {
   width:100%;
-
-
 }
+
+.update_remove_restaurant{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.search_restaurant {
+  display:flex;
+  margin: 15px 0 15px 0;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  height:50px;
+  gap:15px;
+  
+}
+
+#search_to_update {
+  width: 40%;
+  border-radius: 5px;
+  padding-left: 12px;
+}
+
+
+#update_restaurant {
+  height: 60px;
+  width:300px;
+  margin: 0 0 50px 0;
+  font-size: 24px;
+  background-color:rgb(31, 185, 90);
+  cursor: pointer;
+  border-radius: 10% / 50%;
+}
+
+
+#remove_restaurant {
+  font-size: 24px;
+  height: 60px;
+  margin: 0 0 50px 0;
+  width:300px;
+  background-color: brown;
+  cursor: pointer;
+  border-radius: 10% / 50%;
+}
+
+.account_info {
+  display: flex;
+  justify-content: center;
+}
+
+
+
 
 
 
