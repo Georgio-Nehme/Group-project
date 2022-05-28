@@ -10,6 +10,11 @@
   height: 350px;
 }
 
+h1{
+  font-size: 50px;
+  color: crimson;
+}
+
 .topnav {
   overflow: hidden;
 }
@@ -103,27 +108,43 @@ input {
 }
 
 #form1 {
-  padding-top: 25px;
+  padding: 25px 0 25px 0;
   width:45%;
-  border:1px solid black;
   margin:25px 0 0 0;
   display:Flex;
   flex-direction:column;
   justify-content: center;
   align-items: center;
   gap:15px;
+  border-radius: 15px;
+  background-color: rgba(120, 174, 254, 0.815);
+}
+.login_input{
+  border-radius: 10px;
+  width: 60%;
+  height: 40px;
 }
 
+.signup_input{
+  border-radius: 10px;
+  width: 60%;
+  height: 40px;
+}
+
+
+
 #form2 {
-  padding-top: 25px;
+  padding: 25px 0 25px 0;
   width:45%;
-  border:1px solid black;
   margin:25px 0 0 0;
   display:Flex;
   flex-direction:column;
   justify-content: center;
   align-items: center;
   gap:15px;
+  border-radius: 15px;
+  background-color: rgba(120, 174, 254, 0.815);
+
 }
 
 
@@ -132,12 +153,26 @@ input {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
 }
 
 .signup_container {
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+
+}
+
+.sign_button {
+  border-radius: 10px;
+  width: 60%;
+  height: 50%;
+  height: 40px;
+  background-color: rgb(255, 255, 255);
+  font-size: 24px;
+  cursor: pointer;
+  
 }
 
 .search_bar{
@@ -196,6 +231,15 @@ input {
 .main{
   background-size: 150%;
 }
+
+#form2 {
+  width:90%;
+}
+
+#form1 {
+  width:90%;
+}
+
 }
 
 
