@@ -1,0 +1,55 @@
+#form1 {
+  padding: 15px 0 25px 0;
+  width:35%;
+  margin:25px 0 0 0;
+  display:Flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  gap:15px;
+  border-radius: 15px;
+}
+
+.input_info_container {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:50%;
+  gap:15px;
+  margin:10% 0  0 25%;
+  padding:0 0 15px 0;
+}
+
+
+input {
+
+  background-color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  height: 30px;
+  padding: 10px;
+}
+
+
+#desc{
+    background-color: white;
+  text-decoration: none;
+  border-radius: 15px;
+  height: 80px;
+  padding: 10px;
+
+}
+#sign-up{
+    font-family: CountryBlueprint;
+    font-size: large;
+    margin-top: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+html {
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("imgs/add.jpg");
+    background-size: cover;
+}
