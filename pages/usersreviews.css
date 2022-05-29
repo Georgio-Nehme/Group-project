@@ -1,0 +1,23 @@
+html{
+    background:url("imgs/review.jpg");
+    background-size: cover;
+}
+
+
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box1{
+    height: 225px;
+    width: 225px;
+    margin-top: 50px;
+    border-radius: 15px;
+    font-size: xxx-large;
+    font-family: CountryBlueprint;
+}
