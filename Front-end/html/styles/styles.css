@@ -1,0 +1,480 @@
+
+body {
+  background:url(./images/iconsbg.png) ;
+  background-size: auto;
+  width:100vw;
+  height:1000px;
+  
+  
+}
+.main {
+  background: url("./images/lunch.jpg");
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  color: #fff;
+  padding: 0 6vw;
+  margin: -10px;
+  height: 350px;
+  opacity:0.7;
+}
+
+h1{
+  font-size: 50px;
+  color: rgb(253, 253, 253);
+  background-color: crimson;
+  border-radius: 15px;
+  width:65%;
+  text-align: center;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 45px;
+  font-family: CountryBlueprint;
+  margin-right:80px ;
+}
+
+
+input {
+ 
+  background-color: white;
+  font-size: large;
+  text-decoration: none;
+}
+
+
+.form1 {
+  border-radius: 10px;
+  padding: 15px;
+  background: white;
+  margin-left:28% ;
+  width: 50%;
+}
+
+.zomato {
+  text-align: center;
+  margin-top: 100px;
+  font-size: xxx-large;
+  font-family: CountryBlueprint;
+}
+
+
+.topnav-right {
+  float: right;
+}
+
+
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.box1{
+    height: 225px;
+    width: 225px;
+    margin-top: 100px;
+    background: url("images/br.jpg");
+    border-radius: 15px;
+}
+
+.breakfast{
+    text-align: center;
+    font-family: CountryBlueprint;
+    margin-top: -40px;
+    font-size:x-large ;
+}
+
+.box{
+    height: 225px;
+    width: 225px;
+    margin-top: 100px;
+    background: url("images/lunch.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    align-content: center;
+    background: center;
+}
+
+.breakfast:hover {
+ cursor: pointer;
+}
+
+.fav{
+  text-align: center;
+  margin-top: 100px;
+  font-family: CountryBlueprint;
+  font-size: xxx-large;
+}
+
+#form1 {
+  padding: 25px 0 25px 0;
+  width:45%;
+  margin:25px 0 0 0;
+  display:Flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  gap:15px;
+  border-radius: 15px;
+  background-color: rgba(120, 174, 254, 0.815);
+}
+.login_input{
+  border-radius: 10px;
+  width: 60%;
+  height: 40px;
+}
+
+.signup_input{
+  border-radius: 10px;
+  width: 60%;
+  height: 40px;
+}
+
+
+
+#form2 {
+  padding: 25px 0 25px 0;
+  width:45%;
+  margin:25px 0 0 0;
+  display:Flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  gap:15px;
+  border-radius: 15px;
+  background-color: rgba(120, 174, 254, 0.815);
+
+}
+
+
+.login_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.signup_container {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.sign_button {
+  border-radius: 10px;
+  width: 60%;
+  height: 50%;
+  height: 40px;
+  background-color: rgb(85, 173, 41);
+  font-size: 24px;
+  cursor: pointer;
+  
+}
+
+.search_bar{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+  height: 40px;
+
+}
+
+#searchbar {
+  width:40%;
+  height: 100%;
+  border-radius: 10px;
+  border:none;
+}
+
+.search_button {
+  width:10%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #fff;
+  border:none;
+  cursor:pointer;
+
+}
+
+
+.nav_button{
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  margin: 5px 20px 0 20px;
+  font-weight:bolder ;
+  text-decoration: none;
+}
+
+
+
+
+
+.add_restaurant {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 50px 0;
+  background-color:rgba(120, 174, 254, 0.815);
+  border-radius: 15px;
+}
+
+.input_info_container {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:50%;
+  gap:15px;
+  margin:0 0 15px 0;
+  padding:0 0 15px 0;
+}
+
+.restaurant_info_input{
+  width: 100%;
+  border-radius: 5px;
+  height: 50px;
+  border:none;
+}
+
+#Submit_restaurant{
+  width:100%;
+  height: 50px;
+  border-radius: 5px;
+  border:none;
+  background-color: rgb(31, 185, 90); 
+  cursor: pointer; 
+}
+
+
+
+
+.pending_reviews{
+  display:flex;
+  flex-direction:column;
+  justify-content:center ;
+  align-items: center;
+}
+
+
+.reviews_container{
+display:flex;
+flex-direction:column;
+background-color: cornflowerblue;
+border-radius: 25px;
+justify-content:center ;
+align-content: center;
+width:95%;
+list-style-type: none;
+}
+ .pending_review {
+   width: 95%;
+    border:1px solid black;
+    margin:15px 0 15px 0;
+    padding-left: 15px;
+    border-radius:15px ;
+    background-color: rgb(93, 162, 162);
+ }
+
+ .reviewer{
+   margin: 15px 0 15px 0;
+   text-decoration: underline;
+   background-color: bisque;
+   width:20%;
+   height:30px;
+   border-radius:20px;
+   padding-left: 5px;
+ }
+
+ .reviewed_restaurant{
+   margin: 0 0 20px 0;
+   width:20%;
+   background-color: rgb(144, 144, 255);
+   border-radius: 20px;
+   padding-left: 15px;
+   text-decoration: underline;
+ }
+
+.review_buttons {
+  margin: 0 0 20px 0;
+  width: 150px;
+  border-radius: 10px;
+  border:1px solid;
+  cursor: pointer;
+  height: 50px;
+  font-size: 20px;
+}
+
+#accepted_button{
+  background-color:rgb(31, 185, 90);
+}
+
+#rejected_button{
+  background-color:rgb(185, 31, 31);
+}
+
+
+.restaurant_info {
+  justify-self: center;
+  margin:50px 0 100px 0;
+  width:100vw;
+  height:100vh;
+  display:flex;
+  flex-direction: column ;
+  background-color: rgb(196, 220, 212);
+  justify-content:top;
+  align-items:center;
+  gap:20px;
+}
+
+
+.restaurant_display {
+  width:30%;
+  height:auto;
+  border-radius: 15px ;
+  }
+
+.contact > button{
+  background-color: none;
+  width:150px;
+  border-radius: 0 0 10px 10px;
+  cursor:pointer;
+}
+
+#input_review {
+  width:100%;
+  height:100px;
+  border-radius: 15px 15px 15px 0;
+  background-color: bisque;
+  margin:0 0 5px 0;
+  padding-left: 10px;
+
+}
+
+.write_review > button{
+  border-radius: 0 0 5px 5px; 
+}
+
+
+.Restaurant_reviews {
+  list-style-type: none;
+}
+
+
+.account_info {
+  padding:20px 0 0 20px;
+  margin: 15px 0 0 0 ;
+  display: flex;
+  flex-direction: column;
+  background-color: bisque;
+
+}
+
+#profile_picture {
+  width:20vw;
+  height: auto;
+  border-radius: 150px;
+
+}
+
+#username {
+  width:100%;
+}
+
+.update_remove_restaurant{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+
+.search_restaurant {
+  display:flex;
+  margin: 15px 0 15px 0;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  height:50px;
+  gap:15px;
+  
+}
+
+#search_to_update {
+  width: 40%;
+  border-radius: 5px;
+  padding-left: 12px;
+}
+
+
+#update_restaurant {
+  height: 60px;
+  width:300px;
+  margin: 0 0 50px 0;
+  font-size: 24px;
+  background-color:rgb(31, 185, 90);
+  cursor: pointer;
+  border-radius: 10% / 50%;
+}
+
+
+#remove_restaurant {
+  font-size: 24px;
+  height: 60px;
+  margin: 0 0 50px 0;
+  width:300px;
+  background-color: brown;
+  cursor: pointer;
+  border-radius: 10% / 50%;
+}
+
+.account_info {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+@media (max-width: 1000px) {
+.container {
+  margin-left: 40%;
+  flex-direction: column;
+}
+.main{
+  background-size: 150%;
+}
+
+#form2 {
+  width:90%;
+}
+
+#form1 {
+  width:90%;
+}
+
+}
+
+
+
