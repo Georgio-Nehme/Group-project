@@ -1,3 +1,9 @@
+html{
+    background: url("imgs/orange.jpg");
+    background-size: cover;
+}
+
+
 .main {
   background-color: #333333;
   background-position: center;
@@ -32,7 +38,6 @@
     justify-content: space-around;
     margin-top: 20px;
     margin-left: 30%;
-    border: 3px solid black;
     width: 40%
 }
 
@@ -49,7 +54,7 @@
 
 .header {
   overflow: hidden;
-  background-color: #333333;
+  background-color: white;
   padding: 20px 10px;
   width: 100%;
   margin-left: -10px;
@@ -58,13 +63,12 @@
 
 .header a {
   float: left;
-  color: white;
+  color: black;
   text-align: center;
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
   line-height: 25px;
-  border-radius: 4px;
     margin-left: 20px;
     font-family: CountryBlueprint;
 }
@@ -95,7 +99,7 @@
 .box{
     width: 200px;
     height: 300px;
-    background: white;
+
 
 }
 
