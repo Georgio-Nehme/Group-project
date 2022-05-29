@@ -1,0 +1,45 @@
+.main {
+  background: url("./imgs/food1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  color: #fff;
+  padding: 0 6vw;
+  margin: -10px;
+  height: 350px;
+
+}
+
+
+.title{
+  font-family: CountryBlueprint;
+  margin-left: 85%;
+  font-size: xx-large;
+
+}
+
+
+.container{
+
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-left: 30%;
+    border: 3px solid black;
+    width: 40%
+}
+
+
+.box{
+    width: 200px;
+    height: 300px;
+    background: white;
+
+}
+
+.att{
+  font-family: CountryBlueprint;
+
+}

@@ -35,6 +35,9 @@ html{
     font-family: CountryBlueprint;
     font-size: large;
     margin-top: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
 }
 
 input {
