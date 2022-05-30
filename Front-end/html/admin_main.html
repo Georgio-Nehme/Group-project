@@ -4,6 +4,63 @@
     <title>Admin Main Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/admin_main.css">
+             <script>
+        let request = new XMLHttpRequest();
+      request.open("GET", "http://localhost/test/viewall.php");
+      request.send();
+      request.onload = () => {
+          console.log(request);
+          if (request.status === 200) {
+              // by default the response comes in the string format, we need to parse the data into JSON
+              console.log(JSON.parse(request.response));
+          } else {
+              console.log(`error ${request.status} ${request.statusText}`);
+          }
+          var i = JSON.parse(request.response)
+          console.log(i)
+
+
+          for(let k=0;k<i.length;k++) {
+              var name = (i[k].rest_name)
+              var city = (i[k].rest_city)
+              var description = (i[k].description)
+              var id=(i[k].rest_id)
+
+
+//event.prevent default (add event listener)
+var main=document.getElementById("box")
+
+
+          let listt=document.createElement("ul")
+          main.appendChild(listt)
+
+          let tt=document.createElement("li")
+          tt.innerHTML= "Restaurant Name:"+name;
+          listt.appendChild(tt)
+
+          let place=document.createElement("li")
+          place.innerHTML="City:"+city;
+          listt.appendChild(place)
+
+          let desc=document.createElement("li")
+          desc.innerHTML="Description:     "+description
+          listt.appendChild(desc)
+
+          var line=document.createElement("hr")
+          listt.appendChild(line)
+
+
+              // let s = document.getElementsByTagName("h1")
+              // for (let t = 0; t < s.length; t++) {
+              //     s[t].innerHTML =name
+              // }
+          }
+
+
+      }
+
+    </script>
+
 </head>
 
 <body>
@@ -15,18 +72,14 @@
       <a href="Remove.html">Remove Restaurant</a>
       <a href="users.html">View users</a>
       <a href="Reviews.html">View Reviews</a>
+      <a href="updaterest.html">Update Restaurant</a>
   </div>
 </div>
 
 
    <div class="container">
 
-       <div class="box">
-           <h1 class="att">id</h1>
-           <h2 class="att">name</h2>
-           <h3 class="att">description</h3>
-           <h3 class="att">descriptions</h3>
-           <h3 class="att">picture</h3>
+       <div id="box" class="box">
 
        </div>
 

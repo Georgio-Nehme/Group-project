@@ -1,68 +1,66 @@
 
 html{
-  background: url("imgs/vintage-old-rustic-cutlery-dark.jpg");
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("images/pexels-lukas-616409.jpg") no-repeat;
   background-size: cover;
 
 }
 
-#form1 {
-  padding: 15px 0 25px 0;
-  width:35%;
-  margin:25px 0 0 0;
-  display:Flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
-  gap:15px;
-  border-radius: 15px;
-}
+
 
 .title{
   font-family: CountryBlueprint;
-  color: white;
-}
-
-.signup_container {
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  color: #04AA6D;
   margin-left: 30%;
-
 }
 
-#sign-up{
-    font-family: CountryBlueprint;
-    font-size: large;
-    margin-top: 30px;
-    background-color: black;
-    color: white;
+.box2{
+    width: 350px;
+    padding: 15px;
+    margin-top: 7%;
+    background: white;
     border-radius: 10px;
+    margin-left: 38%;
+
 }
+
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
 
 input {
-
-  background-color: white;
-  text-decoration: none;
-  border-radius: 15px;
-  height: 15px;
-  padding: 10px;
-}
-
-
-
-@media (max-width: 1000px) {
-
-#form1 {
-  width:90%;
-}
-  html{
-    width: 250%;
-  }
-  .signup_container{
-    margin-top: 30px;
-    margin-left:-50%;
-  }
+    width: 100%;
+    border: 2px solid lightgray;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    color: black;
 
 }
 
+
+
+
+
+@media (max-width: 1000px){
+    html{
+        height: 100%;
+    }
+    .box2{
+        margin-left:22%;
+        margin-top: 20%;
+    }
+    .title{
+        margin-left: 33%;
+    }
+}

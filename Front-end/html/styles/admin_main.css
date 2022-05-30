@@ -1,5 +1,5 @@
 html{
-    background: url("imgs/orange.jpg");
+    background:linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url("imgs/orange.jpg");
     background-size: cover;
 }
 
@@ -97,15 +97,23 @@ html{
 
 
 .box{
-    width: 200px;
-    height: 300px;
-
+    width: 100%;
 
 }
 
-.att{
+li{
   font-family: CountryBlueprint;
+  font-size: large;
+  width:100%;
+  color: white;
+}
 
+/*ul{*/
+/*    margin-left: 30%;*/
+/*}*/
+
+hr.new1 {
+  border-top: 1px solid red;
 }
 
 

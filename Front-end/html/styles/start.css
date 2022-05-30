@@ -1,5 +1,5 @@
 html{
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("images/ambitious-creative-co-rick-barrett-4u1ZT2r2c5I-unsplash.jpg") no-repeat;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("images/pexels-lukas-616409.jpg") no-repeat;
     background-size: cover;
 
 }
@@ -11,26 +11,50 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    margin-left: 37%;
+    margin-top: 0%;
 }
 
 
-.box2 {
+
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#second{
+    background-color: white;
+    color: #04AA6D;
+}
+
+
+
+
+.box2{
     width: 350px;
     padding: 15px;
-    margin-top: 25px;
+    margin-top: 5%;
+    background: white;
     border-radius: 10px;
-    margin-left: 30%;
+    margin-right: 350px;
 
 }
 
-input[type=text] {
-    width: 200px;
+
+input {
+    width: 100%;
     border: 2px solid lightgray;
     border-radius: 8px;
     padding: 10px;
     box-sizing: border-box;
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-bottom: 20px;
     color: black;
 
 }
@@ -57,7 +81,7 @@ input[type=text] {
 }
 
 .title{
-    margin-left: 35%;
+    margin-left: 42%;
     margin-top: 8%;
     margin-bottom: -2%;
     font-family: CountryBlueprint;
@@ -67,13 +91,13 @@ input[type=text] {
 
 @media (max-width: 1000px){
     html{
-        width: 230%;
+        height: 100%;
     }
     .box2{
-        margin-left:10% ;
+        margin-left:-17% ;
     }
     .title{
-        margin-left: 15%;
+        margin-left: 33%;
     }
 }
 
