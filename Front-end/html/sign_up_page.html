@@ -5,6 +5,8 @@
     <title>Sign Up</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/signup.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 
 
 </head>
@@ -26,19 +28,69 @@
         <h1 class="title"><b> Sign Up </b></h1>
 
           <form>
-              <input type="text" placeholder="Small Name">
-              <input type="text"  placeholder="Family Name">
-              <input type="text" placeholder="Phone Number">
-              <input type="text"  placeholder="Email">
-              <input type="password" placeholder="Password">
-              <input type="text"  placeholder="User type">
-              <button class="block" type="submit" >Sign Up</button>
+              <input type="text" placeholder="Small Name" id="sname">
+              <input type="text"  placeholder="Family Name" id="fname">
+              <input type="text" placeholder="Phone Number" id="phone">
+              <input type="text"  placeholder="Email" id="email">
+              <input type="password" placeholder="Password" id="password">
+              <input type="text" placeholder="City" id="city">
+              <input type="text"  placeholder="User type" id="type">
+              <button class="block" type="submit" id="signup" >Sign Up</button>
           </form>
 
 
   </div>
 
 </div>
+
+<!--<script>-->
+<!--     let up=document.getElementById("signup")-->
+<!--     up.addEventListener("click",signup)-->
+
+<!--     function signup() {-->
+
+<!--         let url = `http://localhost/Group-Project-back-End/signup.php/`-->
+<!--         let data = new FormData;-->
+<!--         let sname = document.getElementById("sname").value;-->
+<!--         let fname = document.getElementById("fname").value;-->
+<!--         let phone_number = document.getElementById("phone").value;-->
+<!--         let email = document.getElementById("email").value;-->
+<!--         let password = document.getElementById("password").value;-->
+<!--         let city = document.getElementById("city").value;-->
+<!--         let type = document.getElementById("type").value;-->
+
+<!--         data.append('sname', sname)-->
+<!--         data.append('fname', fname)-->
+<!--         data.append('phone_number', phone_number)-->
+<!--         data.append('email', email)-->
+<!--         data.append('type', type)-->
+<!--         data.append('city', city)-->
+<!--         data.append('password', password)-->
+
+
+<!--         axios({-->
+
+<!--             method: 'POST',-->
+<!--             url: url,-->
+<!--             data: data-->
+
+
+<!--         })-->
+<!--             .then(function (resp) {-->
+<!--                 console.log(resp.data)-->
+<!--                 let i = resp.data-->
+<!--                 console.log(i);-->
+
+
+<!--             })-->
+<!--         window.location.assign("start.html")-->
+<!--     }-->
+
+
+
+<!--</script>-->
+
+<script src="signup.js"></script>
 
 </body>
 

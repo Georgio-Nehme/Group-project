@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Remove</title>
     <link rel="stylesheet" href="./styles/updateremove.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 </head>
 <body>
 <div class="header">
@@ -24,10 +26,41 @@
 
                 <form id="form1">
                     <h1 class="title"><b> Delete Restaurant</b></h1>
-                    <input  placeholder="Restaurant Name">
+                    <input  id="name" placeholder="Restaurant Name">
                     <button id="sign-up" type="submit" form="form1">Delete</button>
                 </form>
             </div>
+  <script>
+          let log=document.getElementById("sign-up");
+          log.addEventListener("click",deletee)
+
+
+
+             function deletee() {
+                let url = `http://localhost/Group-Project-back-End/deleterest.php/`
+                let data = new FormData;
+                let rest_name=document.getElementById("name").value;
+                data.append('rest_name',rest_name)
+
+
+                axios({
+
+                    method: 'POST',
+                    url: url,
+                    data:data
+
+
+                })
+                    .then(function (resp) {
+                        console.log(resp.data)
+                        let i = resp.data
+                        console.log(i);
+
+
+                    })
+        }
+</script>
+
 
 </body>
 </html>

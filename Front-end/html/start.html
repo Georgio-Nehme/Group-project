@@ -6,14 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/start.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-<!--    <script>-->
+
+
+
+
+</head>
+<body>
+
+<p class="title"><b>SOMATO</b></p>
+
+
+<div class="container">
+<div class="box2">
+                      <form>
+                       <input type="text" name="email" placeholder="Email" id="emaill">
+
+                       <input type="password" name="password" placeholder="Password" id="passwordd">
+                      </form>
+
+
+                      <button class="block"  id="login"><b><b>Log In</b></b></button>
+                      <button class="block" id="second" href="./sign_up_page.html"><b>Create New Account</b></button>
+
+    </div>
+
+
+</div>
+<!--<script>-->
 
 <!--        let log=document.getElementById("login");-->
 <!--        log.addEventListener("click",login)-->
 
 
 <!--            function login() {-->
-<!--                let url = `http://localhost/Group-Project-back-End/sign.php/`-->
+<!--                let url = `http://localhost/Group-Project-back-End/signin.php/`-->
 <!--                let data = new FormData;-->
 <!--                let e=document.getElementById("emaill").value;-->
 <!--                let p=document.getElementById("passwordd").value;-->
@@ -33,86 +59,29 @@
 <!--                        console.log(resp.data)-->
 <!--                        let i = resp.data-->
 <!--                        console.log(i);-->
+<!--                        let r=i.type;-->
+<!--                        if (r=="user"){-->
+<!--                          window.location.assign("user_main.html")-->
+<!--                        }-->
+
+<!--                        else {-->
+<!--                            window.location.assign("admin_main.html")-->
+<!--                        }-->
 
 <!--                    })-->
 <!--        }-->
 
+<!--        s=document.getElementById("second")-->
+<!--        s.addEventListener("click", direct)-->
+<!--        function direct(){-->
+<!--            window.location.assign("sign_up_page.html")-->
+<!--        }-->
+<!--        localstorage.setItem("user_id",i.user_id)-->
+
+
+
 
 <!--    </script>-->
-
-
-
-</head>
-<body>
-
-<p class="title"><b>ZOMATO</b></p>
-
-
-<div class="container">
-<div class="box2">
-                      <form>
-                       <input type="text" name="email" placeholder="Email" id="emaill">
-
-                       <input type="text" name="password" placeholder="Password" id="passwordd">
-                      </form>
-
-
-                      <button class="block"  id="login"><b><b>Log In</b></b></button>
-                      <button class="block" id="second" href="./sign_up_page.html"><b>Create New Account</b></button>
-
-    </div>
-
-
-</div>
-<script>
-
-        let log=document.getElementById("login");
-        log.addEventListener("click",login)
-
-
-            function login() {
-                let url = `http://localhost/Group-Project-back-End/signin.php/`
-                let data = new FormData;
-                let e=document.getElementById("emaill").value;
-                let p=document.getElementById("passwordd").value;
-                data.append('email',e)
-                data.append('password',p)
-
-
-                axios({
-
-                    method: 'POST',
-                    url: url,
-                    data:data
-
-
-                })
-                    .then(function (resp) {
-                        console.log(resp.data)
-                        let i = resp.data
-                        console.log(i);
-                        let r=i.type;
-                        if (r=="user"){
-                          window.location.assign("user_main.html")
-                        }
-
-                        else {
-                            window.location.assign("admin_main.html")
-                        }
-
-                    })
-        }
-
-        s=document.getElementById("second")
-        s.addEventListener("click", direct)
-        function direct(){
-            window.location.assign("sign_up_page.html")
-        }
-
-
-
-
-    </script>
-
+ <script src="start.js"></script>
 </body>
 </html>
