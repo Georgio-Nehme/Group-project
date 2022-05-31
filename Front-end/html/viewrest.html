@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Main Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/viewrest.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://kit.fontawesome.com/2fe19ac7a6.js" crossorigin="anonymous"></script>
+
+     <script>
+     const params=new URLSearchParams(window.location.search);
+      let rest_id= params.get("rest_id");
+      console.log(rest_id);
+
+
+     let url=`http://localhost/Group-Project-back-End/restbyid.php/`
+     let data=new FormData();
+     data.append('rest_id',rest_id)
+
+
+     axios({
+
+         method:'POST',
+         url:url,
+         data:data,
+
+
+     })
+         .then(function (resp) {
+             console.log(resp.data)
+             let i = resp.data
+             console.log(i);
+
+
+             let main=document.getElementById("container")
+
+                 var id = (i[0].rest_id)
+                 var name = (i[0].rest_name)
+                 var city = (i[0].rest_city)
+                 var type = (i[0].type_rest)
+                 var desc=(i[0].description)
+                 var rev=(i[0].review)
+
+
+
+//event.prevent default (add event listener)
+
+                 let image=document.createElement("img")
+                 image.src="./styles/imgs/food1.jpg"
+                 // image.style.marginLeft="20%";
+                 image.style.marginBottom="10%";
+                 main.appendChild(image)
+
+
+
+
+                 let tt = document.createElement("h4")
+                 tt.innerHTML = "&#127380;"+":" +id;
+                 main.appendChild(tt)
+
+
+
+
+                  let cityy = document.createElement("h4")
+                 cityy.innerHTML = "&#128205;"+"City:"+city;
+                 main.appendChild(cityy)
+
+
+                 let namee = document.createElement("h4")
+                 namee.innerHTML ="&#x2B50;" +"Name:" +name;
+                 main.appendChild(namee)
+
+                  let typee = document.createElement("h4")
+                 typee.innerHTML = "&#x2B50;" +"Type:"+type;
+                 main.appendChild(typee)
+
+                  let descr = document.createElement("h4")
+                 descr.innerHTML = "&#x2B50;" +"Description:"+desc;
+                 main.appendChild(descr)
+
+                 let revieww = document.createElement("h4")
+                 revieww.innerHTML = "&#x2B50;" +"Reviews:"+rev;
+                 main.appendChild(revieww)
+
+         })
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+   <div class="header">
+  <a href="#default" class="logo">Welcome </a>
+  <div class="header-right">
+      <a href="userreview.html">Add Review</a>
+      <a href="userprofile.html">Edit profile</a>
+
+  </div>
+</div>
+
+ <h1 id="title"></h1>
+   <div id="container">
+
+
+
+
+       </div>
+
+
+
+
+
+
+</body>
+
+
+</html>

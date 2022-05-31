@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/admin_main.css">
      <script>
+
         let request = new XMLHttpRequest();
       request.open("GET", "http://localhost/test/viewall.php");
       request.send();
@@ -20,6 +21,12 @@
           console.log(i)
 
 
+
+          var main=document.getElementById("container")
+          let title=document.getElementById("title")
+          title.innerHTML="Grab Some Breakfast!"
+
+
           for(let k=0;k<i.length;k++) {
               var name = (i[k].rest_name)
               var city = (i[k].rest_city)
@@ -28,37 +35,36 @@
 
 
 //event.prevent default (add event listener)
-var main=document.getElementById("box")
 
-          let listt=document.createElement("ul")
+
+          let listt=document.createElement("div")
+          listt.setAttribute("id","box")
+          listt.style.backgroundImage= "url(./styles/images/food1.jpg)"
+          listt.style.backgroundSize="150%"
           main.appendChild(listt)
 
-          let tt=document.createElement("li")
-          tt.innerHTML= "Restaurant Name:"+name;
+
+          let tt=document.createElement("h3")
+          tt.innerHTML= name +","+city
           listt.appendChild(tt)
 
-          let place=document.createElement("li")
-          place.innerHTML="City:"+city;
-          listt.appendChild(place)
+          let buttonn=document.createElement("a")
+          buttonn.setAttribute("id","press")
+          buttonn.innerHTML="view more details"
+          buttonn.href= "viewrest.html?rest_id="+ id;
+          listt.appendChild(buttonn)
 
-          let desc=document.createElement("li")
-          desc.innerHTML="Description:     "+description
-          listt.appendChild(desc)
-
-          var line=document.createElement("hr")
-          listt.appendChild(line)
-
-
-              // let s = document.getElementsByTagName("h1")
-              // for (let t = 0; t < s.length; t++) {
-              //     s[t].innerHTML =name
-              // }
           }
 
 
-      }
+         }
+
+
+
 
     </script>
+
+
 </head>
 
 <body>
@@ -72,22 +78,18 @@ var main=document.getElementById("box")
   </div>
 </div>
 
+ <h1 id="title"></h1>
+   <div id="container">
 
-   <div class="container">
 
-       <div id="box" class="box">
-<!--           <h1  class="att">id</h1>-->
-<!--           <h1  class="att">name</h1>-->
-<!--           <h2 class="att">description</h2>-->
-<!--           <h2 class="att">descriptions</h2>-->
-<!--           <h2 class="att">picture</h2>-->
+
 
        </div>
 
 
 
 
-   </div>
+
 
 </body>
 
